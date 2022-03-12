@@ -1,0 +1,27 @@
+body {
+    background: #94AFCB;
+    width: 100%;
+    height:100%;
+}
+#centered{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin-right: -150px;
+  margin-top: -150px;
+  border-radius:10px;
+  right:50%;
+  top:50%;
+  background-color: #E7CA9E;
+  text-align: center;
+  vertical-align: middle;
+}
+.child{
+  position: relative;
+  top:50%;
+  margin-top:-10px;
+}
+#error{
+  display:none;
+  color:#FF0000;
+}

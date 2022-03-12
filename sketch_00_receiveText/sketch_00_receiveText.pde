@@ -8,7 +8,7 @@ void setup(){
   size(200,200);
    //CLIENT NEEDS THE IP ADDRESS OF THE SERVER AND CONNECTS TO IT
    //127.0.0.1 or localhost means the local machine
-  wsc= new WebsocketClient(this, "ws://127.0.0.1:8072/");
+  wsc= new WebsocketClient(this, "ws://localhost:8080/");
 
   textAlign(CENTER);
 }
@@ -21,4 +21,8 @@ void draw(){
 void webSocketEvent(String msg){
  println(msg);
  textR = msg;
+}
+void keyPressed()
+{
+  wsc.sendMessage("hello");
 }
